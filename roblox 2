@@ -37,7 +37,7 @@ Environment.Settings = {
 	Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
 	ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
 	ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
-	TriggerKey = "mousebutten5",
+	TriggerKey = "MouseButton5",
 	Toggle = false,
 	LockPart = "Head" -- Body part to lock on
 }
@@ -45,7 +45,7 @@ Environment.Settings = {
 Environment.FOVSettings = {
 	Enabled = true,
 	Visible = true,
-	Amount = 60,
+	Amount = 90,
 	Color = Color3.fromRGB(255, 255, 255),
 	LockedColor = Color3.fromRGB(255, 70, 70),
 	Transparency = 0.5,
@@ -220,13 +220,13 @@ end
 function Environment.Functions:ResetSettings()
 	Environment.Settings = {
 		Enabled = true,
-		TeamCheck = true,
+		TeamCheck = false,
 		AliveCheck = true,
-		WallCheck = true,
+		WallCheck = false,
 		Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
 		ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
 		ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
-		TriggerKey = "x",
+		TriggerKey = "MouseButton5",
 		Toggle = false,
 		LockPart = "Head" -- Body part to lock on
 	}
@@ -234,7 +234,7 @@ function Environment.Functions:ResetSettings()
 	Environment.FOVSettings = {
 		Enabled = true,
 		Visible = true,
-		Amount = 120,
+		Amount = 90,
 		Color = Color3.fromRGB(255, 255, 255),
 		LockedColor = Color3.fromRGB(255, 70, 70),
 		Transparency = 0.5,
